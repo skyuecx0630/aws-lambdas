@@ -1,0 +1,85 @@
+{
+    "version": "0",
+    "id": "f7248fb1-c544-e40a-9cbb-df2588e6bf5d",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.ec2",
+    "account": "856210586235",
+    "time": "2023-06-23T08:09:51Z",
+    "region": "ap-northeast-2",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.08",
+      "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDA4OWRAXJ57V73KT4I2",
+        "arn": "arn:aws:iam::856210586235:user/hmoon",
+        "accountId": "856210586235",
+        "accessKeyId": "ASIA4OWRAXJ54LY642FO",
+        "userName": "hmoon",
+        "sessionContext": {
+          "sessionIssuer": {},
+          "webIdFederationData": {},
+          "attributes": {
+            "creationDate": "2023-06-22T22:55:53Z",
+            "mfaAuthenticated": "false"
+          }
+        }
+      },
+      "eventTime": "2023-06-23T08:09:51Z",
+      "eventSource": "ec2.amazonaws.com",
+      "eventName": "AuthorizeSecurityGroupIngress",
+      "awsRegion": "ap-northeast-2",
+      "sourceIPAddress": "14.47.103.97",
+      "userAgent": "AWS Internal",
+      "requestParameters": {
+        "groupId": "sg-0761b72cc53024020",
+        "ipPermissions": {
+          "items": [
+            {
+              "ipProtocol": "tcp",
+              "fromPort": 2222,
+              "toPort": 2222,
+              "groups": {},
+              "ipRanges": {
+                "items": [
+                  {
+                    "cidrIp": "0.0.0.0/0",
+                    "description": "q"
+                  }
+                ]
+              },
+              "ipv6Ranges": {},
+              "prefixListIds": {}
+            }
+          ]
+        }
+      },
+      "responseElements": {
+        "requestId": "ded3646d-1c48-4dfa-8d2c-49f811780847",
+        "_return": true,
+        "securityGroupRuleSet": {
+          "items": [
+            {
+              "groupOwnerId": "856210586235",
+              "groupId": "sg-0761b72cc53024020",
+              "securityGroupRuleId": "sgr-0f46a7b2367c39265",
+              "description": "q",
+              "isEgress": false,
+              "ipProtocol": "tcp",
+              "fromPort": 2222,
+              "toPort": 2222,
+              "cidrIpv4": "0.0.0.0/0"
+            }
+          ]
+        }
+      },
+      "requestID": "ded3646d-1c48-4dfa-8d2c-49f811780847",
+      "eventID": "e911d103-e70a-43e6-b05c-2d43114e7814",
+      "readOnly": false,
+      "eventType": "AwsApiCall",
+      "managementEvent": true,
+      "recipientAccountId": "856210586235",
+      "eventCategory": "Management",
+      "sessionCredentialFromConsole": "true"
+    }
+  }
